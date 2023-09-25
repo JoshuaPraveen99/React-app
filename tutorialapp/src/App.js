@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import pic1 from "./pic1.avif";
 import pic2 from "./pic2.jpg";
 import pic3 from "./pic3.avif";
