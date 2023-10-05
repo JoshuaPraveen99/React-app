@@ -1,0 +1,209 @@
+/* .background{
+  background:linear-gradient(to bottom, #f0f0f0 50%, #ffffff 50%);
+  height:37rem;
+  display: flex;
+  flex-direction:column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.centered-heading{
+  background-color:orange;
+  font-size: 7.8rem;
+  font-weight: 1000;
+  margin-top: 1.8rem;
+  width:fit-content; 
+}
+
+.container{
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2.2rem;
+  margin-left: 0.5rem;
+}
+
+.box{
+   background-color: aquamarine;
+   width:35%;
+   height:20rem;
+   padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+   text-align: left;
+   border: 0.0625rem solid #ccc;
+   box-shadow: 0rem 0rem 0.625rem rgba(0,0,0,0.2);
+   transition: transform 0.3s ease-in-out;
+}
+
+.box:first-child{
+  background-color: #6a5acd;
+}
+
+.box:nth-child(2){
+  background-color: #9370db;
+}
+
+.box:last-child{
+  margin-right: 0rem;
+  background-color: #ba55d3;
+}
+
+.box-content{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+.icon{
+  margin-top: 1.5rem;
+}
+
+.icon img{
+  width:3.125rem;
+  height:3.125rem;
+}
+
+.icon img.img-second{
+  width: 3.75rem;
+  height:3.75rem;
+  margin-top: -0.5rem;
+}
+
+.text{
+  color:aliceblue;
+}
+
+.text h1{
+  font-size: 1.55rem;
+  font-weight: 770;
+  margin-top: 1rem;
+}
+
+.text p{
+  font-size: 0.875rem;
+  font-weight: 600;
+  padding-right: 0.8rem;
+}
+
+.text .p1{
+  margin-top:3rem;
+}
+
+.text .p3{
+  margin-top: 3rem;
+}
+
+.button a{
+     color:white;
+     padding: 0.25rem;
+     text-decoration: none;
+     border: 0.125rem solid white;
+     border-color:white;
+}
+
+.button ::after{
+  content: "\2192";
+  margin-left:0.625rem;
+}
+
+.button a:hover{
+  background-color: transparent;
+
+}
+
+.box-hover{
+  transform: scale(1.06);
+} */
+.background {
+  background: linear-gradient(to bottom, #f0f0f0 50%, #ffffff 50%);
+  height: auto; /* Remove fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.centered-heading {
+  background-color: orange;
+  font-size: clamp(16px,10vw,130px);
+  font-weight: 1000; 
+  margin-top: 1rem; 
+  width: fit-content;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+  justify-content:space-around; /* Adjust spacing between boxes */
+  margin-top: -1rem;
+  padding: 1rem; 
+}
+
+.box {
+  background-color: aquamarine;
+  width: 90%; /* Use percentage for width */
+  max-width: 400px; /* Add a max-width to prevent excessive stretching on larger screens */
+  margin: 1rem; /* Adjust margin for spacing */
+  padding: 1rem;
+  text-align: left;
+  border: 0.0625rem solid #ccc;
+  box-shadow: 0rem 0rem 0.625rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+  transform: scale(1.06);
+}
+
+.icon {
+  margin-top: 1rem; 
+}
+
+.icon img {
+  width: 30%; /* Use percentage for image size */
+  max-width: 3.75rem; /* Add a max-width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text {
+  color: aliceblue;
+}
+
+.text h1 {
+  font-size: 3.5vw; /* Use vw for font size */
+  font-size: clamp(16px,3.5vw,30px);
+  font-weight: bold; 
+  margin-top: 1rem; 
+}
+
+.text p {
+  font-size: 2.5vw; 
+  font-size: clamp(16px, 2.5vw, 24px);
+  font-weight: 600;
+  margin-top: 1rem; 
+  padding-right: 1rem; 
+}
+
+.button a{
+  color:white;
+  padding: 0.25rem;
+  text-decoration: none;
+  border: 0.125rem solid white;
+  border-color:white;
+  display: inline-block;
+  font-size: clamp(16px, 2vw, 20px);
+}
+
+.button ::after{
+content: "\2192";
+
+margin-left:0.625rem;
+}
+
+.button a:hover {
+  background-color: transparent;
+}
